@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link type="image/png" sizes="32x32" rel="icon" href="static/encyclopedia/images/wiki-icon.png">
+        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h1>Wiki</h1>
+                <!-- Search Bar -->
+                <form action="{% url 'search' %}" method="post">
+                    {% csrf_token %}
+                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia" autocomplete="off">
+                </form>
+                <nav>
+                    <div>
+                        <a href="{% url 'index' %}">Home</a>
+                    </div>
+                    <div>
+                        <a href= "{% url 'create' %}">Create New Page</a>
+                    </div>
+                    <div>
+                        <a href= "{% url 'random_entry' %}">Random</a>
+                    </div>
+                </nav> 
+            </div>
+            <!-- Entry content -->
+            <div class="content">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block body %}
+    <h1><i>Page Not Found.</i></h1>
+    {% if count > 0 %}
+        <h2 id="did_you_mean">Did you mean?</h2>
+        {% for entry in entries %}
+            <ul>
+                <li><a href="{% url 'display_entry' entry %}">{{ entry }}</a></li>
+            </ul>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
