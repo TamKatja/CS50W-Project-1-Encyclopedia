@@ -2,4 +2,4 @@
 
 Wiki/encyclopedia web application built using the Django framework.
 
-https://studio.youtube.com/video/QLIVxqdMXHQ/edit
+https://www.youtube.com/watch?v=QLIVxqdMXHQ
