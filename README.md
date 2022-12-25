@@ -4,7 +4,7 @@ A wiki/encyclopedia web application built using Python, Django, HTML and CSS. Wi
 
 ▶️ See [video preview](https://www.youtube.com/watch?v=QLIVxqdMXHQ).
 
-📝 See [project specifications](https://cs50.harvard.edu/web/2020/projects/1/wiki/)
+📝 See [project specifications](https://cs50.harvard.edu/web/2020/projects/1/wiki/).
 
 <br>
 
